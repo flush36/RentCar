@@ -1,6 +1,6 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-npm run pretest #ESLint é uma ferramenta para identificar e relatar padrões encontrados no código ECMAScript / JavaScript, com o objetivo de tornar o código mais consistente e evitar bugs.
-npx pretty-quick --staged #reclama quando a formatação estiver fora do padrão
-npx lint-staged #Lint-staged Essas ferramentas nos permitem definirmos os diretórios os quais estaremos realizando o processo de lint(boas praticas), a cada commit.
+npm run pretest
+npx pretty-quick --staged
+#npx lint-staged
