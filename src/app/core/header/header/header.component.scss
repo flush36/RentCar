@@ -1,0 +1,33 @@
+$width: 100% !important;
+
+.header-row {
+  width: $width;
+  padding-left: 225px;
+  display: inline-flex;
+}
+
+.header {
+  background-color: #f97d00;
+  width: $width;
+  height: 64px;
+  min-height: 107px;
+  display: flex;
+}
+
+.header-item {
+  color: #fff;
+  background-color: black;
+  width: 160px;
+  text-align: center;
+  height: 35px;
+  border-radius: 10px 10px 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  @media (min-width: 1400px) {
+    max-width: 1530px;
+  }
+}
