@@ -5,10 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HandlesInterceptor } from './core/authentication/handles.interceptor';
 import { HeadersInterceptor } from './core/authentication/headers.interceptors';
+import { HeaderModule } from './core/header/header/header.module';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, HeaderModule],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: HeadersInterceptor, multi: true },
     { provide: HTTP_INTERCEPTORS, useClass: HandlesInterceptor, multi: true },
