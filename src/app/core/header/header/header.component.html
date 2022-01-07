@@ -1,14 +1,46 @@
 <div class="header-row">
-  <div class="header-item" style="background-color: #f97d00">Locação</div>
-  <div class="header-item" style="background-color: #6f42c1">Frotas</div>
-  <div class="header-item" style="background-color: #1976d2">Seminovos</div>
-  <div class="header-item" style="background-color: #000000">Zero KM</div>
+  <div
+    id="locacao"
+    class="header-item"
+    style="background-color: #f97d00"
+    (click)="setColorActivatedItem($event)"
+  >
+    Locação
+  </div>
+  <div
+    id="frotas"
+    class="header-item"
+    style="background-color: #6f42c1"
+    (click)="setColorActivatedItem($event)"
+  >
+    Frotas
+  </div>
+  <div
+    id="seminovos"
+    class="header-item"
+    style="background-color: #1976d2"
+    (click)="setColorActivatedItem($event)"
+  >
+    Seminovos
+  </div>
+  <div
+    id="zerokm"
+    class="header-item"
+    style="background-color: #000000"
+    (click)="setColorActivatedItem($event)"
+  >
+    Zero KM
+  </div>
 </div>
-<div class="header">
+<div class="header" [ngStyle]="{ 'background-color': active }">
   <div
     class="container"
     style="align-items: center; display: flex; max-width: 1530px !important"
   >
-    <img src="./assets/images/rentcar.png" class="img-fluid" alt="RentCar" />
+    <img
+      src="./assets/images/rentcar-logo.png"
+      class="img-fluid"
+      alt="RentCar"
+    />
   </div>
 </div>

@@ -7,7 +7,6 @@ $width: 100% !important;
 }
 
 .header {
-  background-color: #f97d00;
   width: $width;
   height: 64px;
   min-height: 107px;
@@ -24,6 +23,10 @@ $width: 100% !important;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+}
+
+.header-item {
 }
 
 .container {
