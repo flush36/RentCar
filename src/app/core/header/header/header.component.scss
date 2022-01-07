@@ -26,7 +26,19 @@ $width: 100% !important;
   cursor: pointer;
 }
 
-.header-item {
+.icon-padding {
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.icon-layout {
+  color: #fff;
+  padding-left: 7px;
+  padding-right: 7px;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
 }
 
 .container {

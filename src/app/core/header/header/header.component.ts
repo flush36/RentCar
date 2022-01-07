@@ -1,4 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import {
+  faCar,
+  faChevronDown,
+  faPhoneAlt,
+  faQuestionCircle,
+  faUserCircle,
+} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-header',
@@ -7,6 +14,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   active: string = '#f97d00';
+  faPhoneAlt = faPhoneAlt;
+  faQuestionCircle = faQuestionCircle;
+  faCar = faCar;
+  faUserCircle = faUserCircle;
+  faChevronDown = faChevronDown;
 
   constructor() {}
 

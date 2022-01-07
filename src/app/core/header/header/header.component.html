@@ -32,15 +32,39 @@
     Zero KM
   </div>
 </div>
+
 <div class="header" [ngStyle]="{ 'background-color': active }">
   <div
-    class="container"
-    style="align-items: center; display: flex; max-width: 1530px !important"
+    class="container align-items-center d-flex justify-content-between"
+    style="max-width: 1530px !important"
   >
     <img
       src="./assets/images/rentcar-logo.png"
       class="img-fluid"
       alt="RentCar"
     />
+
+    <div class="d-flex justify-content-between">
+      <div class="icon-padding">
+        <fa-icon [icon]="faPhoneAlt" style="color: #ffff"></fa-icon>
+        <a class="icon-layout">CONTATO</a>
+      </div>
+
+      <div class="icon-padding">
+        <fa-icon [icon]="faQuestionCircle" style="color: #ffff"></fa-icon>
+        <a class="icon-layout">AJUDA</a>
+      </div>
+
+      <div class="icon-padding">
+        <fa-icon [icon]="faCar" style="color: #ffff"></fa-icon>
+        <a class="icon-layout">MINHAS RESERVAS</a>
+      </div>
+
+      <div class="icon-padding">
+        <fa-icon [icon]="faUserCircle" style="color: #ffff"></fa-icon>
+        <a class="icon-layout">ENTRAR</a>
+        <fa-icon [icon]="faChevronDown" style="color: #ffff"></fa-icon>
+      </div>
+    </div>
   </div>
 </div>
