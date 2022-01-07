@@ -9,6 +9,11 @@ const routes: Routes = [
         (m) => m.LocationModule
       ),
   },
+  {
+    path: 'header',
+    loadChildren: () =>
+      import('./core/header/header/header.module').then((m) => m.HeaderModule),
+  },
 ];
 
 @NgModule({
