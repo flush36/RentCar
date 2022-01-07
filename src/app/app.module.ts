@@ -15,6 +15,4 @@ import { HeadersInterceptor } from './core/authentication/headers.interceptors';
   ],
   bootstrap: [AppComponent],
 })
-export class AppModule {
-  //teste
-}
+export class AppModule {}
