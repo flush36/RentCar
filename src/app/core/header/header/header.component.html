@@ -1,70 +1,69 @@
-<div class="header-row">
-  <div
-    id="locacao"
-    class="header-item"
-    style="background-color: #f97d00"
-    (click)="setColorActivatedItem($event)"
-  >
-    Locação
-  </div>
-  <div
-    id="frotas"
-    class="header-item"
-    style="background-color: #6f42c1"
-    (click)="setColorActivatedItem($event)"
-  >
-    Frotas
-  </div>
-  <div
-    id="seminovos"
-    class="header-item"
-    style="background-color: #1976d2"
-    (click)="setColorActivatedItem($event)"
-  >
-    Seminovos
-  </div>
-  <div
-    id="zerokm"
-    class="header-item"
-    style="background-color: #000000"
-    (click)="setColorActivatedItem($event)"
-  >
-    Zero KM
-  </div>
-</div>
+<header>
+  <section class="header-row">
+    <div
+      id="locacao"
+      class="header-item"
+      style="background-color: #f97d00"
+      (click)="setColorActivatedItem($event)"
+    >
+      Locação
+    </div>
+    <div
+      id="frotas"
+      class="header-item"
+      style="background-color: #6f42c1"
+      (click)="setColorActivatedItem($event)"
+    >
+      Frotas
+    </div>
+    <div
+      id="seminovos"
+      class="header-item"
+      style="background-color: #1976d2"
+      (click)="setColorActivatedItem($event)"
+    >
+      Seminovos
+    </div>
+    <div
+      id="zerokm"
+      class="header-item"
+      style="background-color: #000000"
+      (click)="setColorActivatedItem($event)"
+    >
+      Zero KM
+    </div>
+  </section>
 
-<div class="header" [ngStyle]="{ 'background-color': active }">
-  <div
-    class="container align-items-center d-flex justify-content-between"
-    style="max-width: 1530px !important"
-  >
-    <img
-      src="./assets/images/rentcar-logo.png"
-      class="img-fluid"
-      alt="RentCar"
-    />
+  <section class="header" [ngStyle]="{ 'background-color': active }">
+    <div>
+      <img
+        src="./assets/images/rentcar-logo.png"
+        class="img-fluid"
+        alt="RentCar"
+      />
 
-    <div class="d-flex justify-content-between">
-      <div class="icon-padding">
-        <fa-icon [icon]="faPhoneAlt" style="color: #ffff"></fa-icon>
-        <a class="icon-layout">CONTATO</a>
-      </div>
+      <div class="d-flex justify-content-between">
+        <div class="icon-padding">
+          <fa-icon [icon]="faPhoneAlt"></fa-icon>
+          <a class="icon-layout">CONTATO</a>
+        </div>
 
-      <div class="icon-padding">
-        <fa-icon [icon]="faQuestionCircle" style="color: #ffff"></fa-icon>
-        <a class="icon-layout">AJUDA</a>
-      </div>
+        <div class="icon-padding">
+          <fa-icon [icon]="faQuestionCircle"></fa-icon>
+          <a class="icon-layout">AJUDA</a>
+        </div>
 
-      <div class="icon-padding">
-        <fa-icon [icon]="faCar" style="color: #ffff"></fa-icon>
-        <a class="icon-layout">MINHAS RESERVAS</a>
-      </div>
+        <div class="icon-padding">
+          <fa-icon [icon]="faCar"></fa-icon>
+          <a class="icon-layout">MINHAS RESERVAS</a>
+        </div>
 
-      <div class="icon-padding">
-        <fa-icon [icon]="faUserCircle" style="color: #ffff"></fa-icon>
-        <a class="icon-layout">ENTRAR</a>
-        <fa-icon [icon]="faChevronDown" style="color: #ffff"></fa-icon>
+        <div class="icon-padding">
+          <fa-icon [icon]="faUserCircle"></fa-icon>
+          <a class="icon-layout">ENTRAR</a>
+          <fa-icon [icon]="faChevronDown"></fa-icon>
+        </div>
       </div>
     </div>
-  </div>
-</div>
+  </section>
+</header>

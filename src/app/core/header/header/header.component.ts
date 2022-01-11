@@ -5,6 +5,7 @@ import {
   faPhoneAlt,
   faQuestionCircle,
   faUserCircle,
+  IconDefinition,
 } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -13,14 +14,21 @@ import {
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-  active: string = '#f97d00';
-  faPhoneAlt = faPhoneAlt;
-  faQuestionCircle = faQuestionCircle;
-  faCar = faCar;
-  faUserCircle = faUserCircle;
-  faChevronDown = faChevronDown;
+  active: string;
+  faPhoneAlt: IconDefinition;
+  faQuestionCircle: IconDefinition;
+  faCar: IconDefinition;
+  faUserCircle: IconDefinition;
+  faChevronDown: IconDefinition;
 
-  constructor() {}
+  constructor() {
+    this.active = '#f97d00';
+    this.faPhoneAlt = faPhoneAlt;
+    this.faQuestionCircle = faQuestionCircle;
+    this.faCar = faCar;
+    this.faUserCircle = faUserCircle;
+    this.faChevronDown = faChevronDown;
+  }
 
   ngOnInit(): void {}
 

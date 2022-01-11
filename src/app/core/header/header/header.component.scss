@@ -1,9 +1,9 @@
-$width: 100% !important;
+$width: 100%;
 
 .header-row {
   width: $width;
-  padding-left: 225px;
   display: inline-flex;
+  padding: 0 8%;
 }
 
 .header {
@@ -39,6 +39,34 @@ $width: 100% !important;
   font-weight: bold;
   font-size: 14px;
   text-decoration: none;
+}
+
+.icon-padding > fa-icon {
+  color: #ffff;
+}
+
+.header > div {
+  padding: 0 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#lotacao {
+  background-color: "#f97d00";
+}
+
+#frotas {
+  background-color: "#6f42c1";
+}
+
+#seminovos {
+  background-color: "#1976d2";
+}
+
+#zerokm {
+  background-color: "#000000";
 }
 
 .container {
