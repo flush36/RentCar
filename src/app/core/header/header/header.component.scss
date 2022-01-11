@@ -1,16 +1,24 @@
 $width: 100%;
 
+.header {
+  width: $width;
+  height: 64px;
+  min-height: 107px;
+  display: flex;
+}
+
 .header-row {
   width: $width;
   display: inline-flex;
   padding: 0 8%;
 }
 
-.header {
-  width: $width;
-  height: 64px;
-  min-height: 107px;
+.header > div {
+  padding: 0 8%;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .header-item {
@@ -45,32 +53,25 @@ $width: 100%;
   color: #ffff;
 }
 
-.header > div {
-  padding: 0 8%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
-
-#lotacao {
-  background-color: "#f97d00";
+#locacao {
+  background-color: #f97d00;
 }
 
 #frotas {
-  background-color: "#6f42c1";
+  background-color: #6f42c1;
 }
 
 #seminovos {
-  background-color: "#1976d2";
+  background-color: #1976d2;
 }
 
 #zerokm {
-  background-color: "#000000";
+  background-color: #000000;
 }
 
-.container {
-  @media (min-width: 1400px) {
-    max-width: 1530px;
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .header > div {
+    flex-direction: column;
   }
 }

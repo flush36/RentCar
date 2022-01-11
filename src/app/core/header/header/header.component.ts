@@ -22,7 +22,7 @@ export class HeaderComponent implements OnInit {
   faChevronDown: IconDefinition;
 
   constructor() {
-    this.active = '#f97d00';
+    this.active = '';
     this.faPhoneAlt = faPhoneAlt;
     this.faQuestionCircle = faQuestionCircle;
     this.faCar = faCar;
@@ -30,11 +30,20 @@ export class HeaderComponent implements OnInit {
     this.faChevronDown = faChevronDown;
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.active = this.getColorById('locacao');
+  }
 
   public setColorActivatedItem(event: any) {
     const id = event.target.id;
-    this.active =
-      document.getElementById(id)?.style.backgroundColor || this.active;
+
+    console.log(event.target.id);
+
+    this.active = this.getColorById(id);
+  }
+
+  public getColorById(id: string) {
+    const div = document.getElementById(id) || new HTMLElement();
+    return window.getComputedStyle(div).backgroundColor;
   }
 }
